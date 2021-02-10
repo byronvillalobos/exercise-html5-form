@@ -8,8 +8,8 @@
 </head>
 <body>
     <!--my code..-->
-   <div class="card border-info mb-3" style="max-width: 80%;">
-  <div class="card-header bg-inf border-info">
+    <div class="container">
+      <div class="card mt-5">
     <h1>Payment form example</h1>  
     
     </div>
@@ -50,10 +50,16 @@
                     <label for="text">City"</label>
                     <input type="text" class="form-control" id="inputPassword1" placeholder="">
                 </div>
-                <div class="col-auto">
-                    <label for="text">State</label>
-                    <input type="text" class="form-control" id="inputPassword2" placeholder="">
-                </div>
+            <div class="col-md-3 mb-3">
+                    <label for="validationCustom04">State</label>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Pick a state</option>
+                        <option value="1">SJ</option>
+                        <option value="2">Heredia</option>
+                        <option value="3">Alajuela</option>
+                    </select>
+                    <div class="invalid-feedback">Please provide a valid state.</div>
+                    </div>
                              <div class="col-auto">
                     <label for="text">Postal Code</label>
                     <input type="text" class="form-control" id="inputPassword2" placeholder="">
@@ -80,7 +86,7 @@
 
     
   </div>
-  <div class="card-footer bg-transparent border-success">
+  <div class="card-footer d-flex justify-content-end">
         <button type="button" class="btn btn-secondary">Cancel</button>
         <button type="button" class="btn btn-primary">Send</button>
 
